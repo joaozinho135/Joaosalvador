@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pag. Principal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(134, 133, 133);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Site de Entreterimento</h1>
+  <p>Siga os links de seu interesse abaixo</p>
+  <p>para explorar os canais sugeridos.</p>
+</div>
+
+<div class="topnav">
+  <a class="item" href="jogos.html">JOGOS</a>
+  <a class="item" href="filmes.html">FILMES</a>
+  <a class="item" href="musicas.html">MUSICAS</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a class="item" href="jogos.html"> 
+    <img src="images/jogos.png" height="300" width="300"> 
+    </a>
+    <p>Aqui pode-se buscar jogos e ver alguns que estao em alta.</p>
+    <p>Tambem nesta pagina, terao links de outros parceiros em jogos.</p>
+    
+  </div>
+  
+  <div class="column">
+    <a class="item" href="filmes.html">
+    <img src="images/filmes.png" height="300" width="300">
+    </a>
+    <p>Aqui pode-se buscar filmes e ver os ultimos no cinema.</p>
+    <p>Tambem nesta pagina, terao links de outros parceiros em filmes.</p>
+    
+  </div>
+  
+  <div class="column">
+    <a class="item" href="musicas.html">
+    <img src="images/musicas.png" height="300" width="300">
+    </a>
+    <p>Aqui pode-se buscar musicas e albuns.</p>
+    <p>Tambem nesta pagina, terao links de outros parceiros relacionados a musica.</p>
+    
+  </div>
+</div>
+
+</body>
+</html>
